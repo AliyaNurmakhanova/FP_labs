@@ -1,3 +1,4 @@
+#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 def euclid_ext(a, b):
     if b == 0:
         return a, 1, 0
@@ -5,14 +6,6 @@ def euclid_ext(a, b):
         d, x, y = euclid_ext(b, a % b)
         return d, y, x - y * (a // b)
 
-# def encrypt(t, e, n):
-#     encrypted_text =pow(t,e)%n
-#     return encrypted_text
-#
-# def decrypt(t, d, n):
-#     decrypted_text =pow(t,d)%n
-#     return decrypted_text
-#идея-1: собщты аски аркылы санга ауыстыру
 p = 5
 q = 19
 n = p * q
@@ -42,11 +35,3 @@ for i in m:
 print(encrypted)
 f=open('encryptedfile.txt','w')
 f.write(str(encrypted))
-
-# decrypted=[]
-# for i in enc:
-#     dec=pow(i,d)%n
-#     ch=chr(dec)
-#     decrypted.append(ch)
-# print(decrypted)
-# print("Вычислить исходное сообщение:",dec)
