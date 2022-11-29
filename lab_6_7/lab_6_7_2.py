@@ -15,3 +15,15 @@ for _ in range(int(input())):
             print('OK')
         else:
             print('Access denied')
+
+# section = []
+# for i in range(5):
+#     member = input().split(',')
+#     section.append(member)
+#
+# for i in range(5):
+#     for j in range(i+1, 5):
+#         if int(section[i][0]) > int(section[j][0]):
+#             section[i], section[j] = section[j], section[i]
+#
+# print(section)
